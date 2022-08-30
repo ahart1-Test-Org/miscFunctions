@@ -16,6 +16,7 @@
 ##### Update/generate README files #####
 autoREADME(dirREADME = "TestRepo/AnotherFolder")
 autoREADME(dirREADME = "TestRepo/TestFolder")
+autoREADME(dirREADME = "TestRepo")
 # autoREADME(dirREADME = "TestThis", title = "Test Title", description = "This is an example README generated in several steps to confirm that autoREADME function and associated GitHub action works correctly.")
 
 ##### Debugging #####
