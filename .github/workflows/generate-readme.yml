@@ -24,12 +24,7 @@ jobs:
           token: ${{secrets.AUTOREADME_PAT}}
           # Above needed if private repo (need to provide credentials to add)
 
-      - name: Checkout TestThis repo
-        uses: actions/checkout@v3
-        with:
-          repository: ahart1/TestThis
-          path: TestThis
-          token: ${{secrets.AUTOREADME_PAT}}
+      
 
       - name: Checkout current version of repo
         uses: actions/checkout@v3
@@ -65,12 +60,5 @@ jobs:
           github_token: ${{secrets.AUTOREADME_PAT}}
        # Will need to periodically update personal access token (limited lifespan) & corresponding secrets
 
-      - name: Commit files TestThis repo
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: A. Hart
-          message: "Auto update/generate README file."
-          cwd: TestThis
-          push: true
-          github_token: ${{secrets.AUTOREADME_PAT}}
+      
 
