@@ -19,8 +19,8 @@ jobs:
       - name: Checkout other repos
         uses: actions/checkout@v3
         with:
-          repository: ahart1/TestRepo
-          path: TestRepo
+          repository: ahart1-Test-Org/TestRepo2
+          path: TestRepo2
           token: ${{secrets.AUTOREADME}}
           # Above needed if private repo (need to provide credentials to add)
 
@@ -55,7 +55,7 @@ jobs:
         with:
           author_name: A. Hart
           message: "Auto update/generate README file."
-          cwd: TestRepo
+          cwd: TestRepo2
           push: true
           github_token: ${{secrets.AUTOREADME}}
        # Will need to periodically update personal access token (limited lifespan) & corresponding secrets
